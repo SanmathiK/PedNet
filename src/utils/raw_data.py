@@ -61,7 +61,7 @@ class PreProcTransforms:
 
 
     def gaussian_blurr(self, img, sigma):
-        blur_image = ndimage.gaussian_filter(img, sigma=sigma, mode='reflect')
+        blur_image = ndimage.gaussian_filter(img, ann, sigma=sigma, mode='reflect')
         return img, ann
 
     def change_bg(self, img, ann, delta):
